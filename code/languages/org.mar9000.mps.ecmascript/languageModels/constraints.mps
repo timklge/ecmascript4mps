@@ -47,8 +47,6 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
-      <concept id="3906442776579556545" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Presentation" flags="in" index="Bn3R3" />
-      <concept id="3906442776579549644" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parameterNode" flags="nn" index="Bn53e" />
       <concept id="1147467115080" name="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" flags="ng" index="EnEH3">
         <reference id="1147467295099" name="applicableProperty" index="EomxK" />
         <child id="1212097481299" name="propertyValidator" index="QCWH9" />
@@ -64,15 +62,9 @@
       </concept>
       <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
         <reference id="1148687202698" name="applicableLink" index="1N5Vy1" />
-        <child id="3906442776579556548" name="presentation" index="Bn3R6" />
         <child id="1148687345559" name="searchScopeFactory" index="1N6uqs" />
       </concept>
       <concept id="1153138554286" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_propertyValue" flags="nn" index="1Wqviy" />
-    </language>
-    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
-        <reference id="1138056395725" name="property" index="3TsBF5" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -85,18 +77,6 @@
     <ref role="1M2myG" to="rh3e:bcrrPfieb$" resolve="JSIdentifierReference" />
     <node concept="1N5Pfh" id="7rFtnRV__gT" role="1Mr941">
       <ref role="1N5Vy1" to="rh3e:bcrrPfieb_" resolve="identifier" />
-      <node concept="Bn3R3" id="7rFtnRV__gV" role="Bn3R6">
-        <node concept="3clFbS" id="7rFtnRV__gW" role="2VODD2">
-          <node concept="3clFbF" id="7rFtnRV__ri" role="3cqZAp">
-            <node concept="2OqwBi" id="7rFtnRV__yx" role="3clFbG">
-              <node concept="Bn53e" id="7rFtnRV__rh" role="2Oq$k0" />
-              <node concept="3TrcHB" id="7rFtnRV__V$" role="2OqNvi">
-                <ref role="3TsBF5" to="rh3e:bcrrPfbtci" resolve="idName" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="1dDu$B" id="2J96awlpBMv" role="1N6uqs">
         <ref role="1dDu$A" to="rh3e:bcrrPfbtch" resolve="JSIdentifier" />
       </node>
