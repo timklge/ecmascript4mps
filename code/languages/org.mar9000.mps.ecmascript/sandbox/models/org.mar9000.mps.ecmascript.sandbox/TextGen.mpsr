@@ -58,8 +58,6 @@
         <child id="8569071899956265641" name="right" index="2dhVvk" />
       </concept>
       <concept id="8569071899956265940" name="org.mar9000.mps.ecmascript.structure.JSMemberExpression" flags="ng" index="2dhVqD">
-        <child id="8569071899956279040" name="identifierProperty" index="2dhS9X" />
-        <child id="8569071899956279195" name="expressionProperty" index="2dhSbA" />
         <child id="8569071899956278887" name="object" index="2dhScq" />
       </concept>
       <concept id="8569071899956268385" name="org.mar9000.mps.ecmascript.structure.JSArrayExpression" flags="ng" index="2dhVws">
@@ -102,6 +100,12 @@
       </concept>
       <concept id="4772229902327261793" name="org.mar9000.mps.ecmascript.structure.JSParenthesizedExpression" flags="ng" index="2gzfuI">
         <child id="4772229902327261845" name="expression" index="2gzftq" />
+      </concept>
+      <concept id="39073801184295283" name="org.mar9000.mps.ecmascript.structure.JSMemberIdentifierExpression" flags="ng" index="175Ywp">
+        <child id="8569071899956279040" name="identifierProperty" index="2dhS9X" />
+      </concept>
+      <concept id="39073801184295348" name="org.mar9000.mps.ecmascript.structure.JSMemberPropertyExpression" flags="ng" index="175Yzu">
+        <child id="8569071899956279195" name="expressionProperty" index="2dhSbA" />
       </concept>
       <concept id="201656743171489017" name="org.mar9000.mps.ecmascript.structure.JSEmptyStatement" flags="ng" index="1dw154" />
       <concept id="201656743171252964" name="org.mar9000.mps.ecmascript.structure.JSIdentifierReference" flags="ng" index="1dx8Xp">
@@ -1007,12 +1011,12 @@
                 <node concept="1dx8Xp" id="53lY_DWjcJ4" role="2dhTaa">
                   <ref role="1dx8Xo" node="53lY_DWjchm" />
                 </node>
-                <node concept="2dhVqD" id="53lY_DWjcK$" role="2dhTO1">
-                  <node concept="1dx8Xp" id="53lY_DWjcKx" role="2dhScq">
-                    <ref role="1dx8Xo" node="53lY_DWjcda" />
+                <node concept="175Ywp" id="2aOmD7FcnQ" role="2dhTO1">
+                  <node concept="1dSrUG" id="2aOmD7Fco5" role="2dhS9X">
+                    <property role="1dSrUJ" value="test" />
                   </node>
-                  <node concept="2dhBij" id="53lY_DWjcKF" role="2dhSbA">
-                    <property role="2dhBvH" value="ddd" />
+                  <node concept="1dx8Xp" id="2aOmD7FcnZ" role="2dhScq">
+                    <ref role="1dx8Xo" node="53lY_DWjcd5" />
                   </node>
                 </node>
               </node>
@@ -1022,12 +1026,12 @@
                 <node concept="1dx8Xp" id="53lY_DWjcSk" role="2dhTaa">
                   <ref role="1dx8Xo" node="53lY_DWjchm" />
                 </node>
-                <node concept="2dhVqD" id="53lY_DWjcTZ" role="2dhTO1">
-                  <node concept="1dx8Xp" id="53lY_DWjcTL" role="2dhScq">
-                    <ref role="1dx8Xo" node="53lY_DWjcda" />
+                <node concept="175Yzu" id="2aOmD7Fco8" role="2dhTO1">
+                  <node concept="2dhBij" id="2aOmD7Fcoq" role="2dhSbA">
+                    <property role="2dhBvH" value="test" />
                   </node>
-                  <node concept="1dSrUG" id="53lY_DWjcUn" role="2dhS9X">
-                    <property role="1dSrUJ" value="ddd" />
+                  <node concept="1dx8Xp" id="2aOmD7Fcon" role="2dhScq">
+                    <ref role="1dx8Xo" node="53lY_DWjcd5" />
                   </node>
                 </node>
               </node>
