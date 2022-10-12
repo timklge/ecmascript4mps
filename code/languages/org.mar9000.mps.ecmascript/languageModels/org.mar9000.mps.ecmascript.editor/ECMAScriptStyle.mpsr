@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:747ff8d1-828a-41db-8304-ef0626966e67(org.mar9000.mps.ecmascript.editor)" content="root">
+  <persistence version="9" />
+  <imports>
+    <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="2491174914159318432" name="jetbrains.mps.lang.editor.structure.DominatesRecord" flags="lg" index="2lhJJ2">
+        <child id="2491174914159330058" name="dominatesStyleClassList" index="2lhEPC" />
+      </concept>
+      <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
+        <child id="1186402402630" name="styles" index="V601i" />
+      </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+        <child id="1186403803051" name="query" index="VblUZ" />
+      </concept>
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
+        <property id="1186403771423" name="style" index="Vbekb" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
+      <concept id="3383245079137422349" name="jetbrains.mps.lang.editor.structure.StyleClassReference" flags="ng" index="14SbXO">
+        <reference id="3383245079137422350" name="styleClass" index="14SbXR" />
+      </concept>
+      <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt">
+        <child id="3383245079137422296" name="dominates" index="14Sbyx" />
+      </concept>
+      <concept id="1225456267680" name="jetbrains.mps.lang.editor.structure.RGBColor" flags="ng" index="1iSF2X">
+        <property id="1225456424731" name="value" index="1iTho6" />
+      </concept>
+      <concept id="9122903797312246523" name="jetbrains.mps.lang.editor.structure.StyleReference" flags="ng" index="1wgc9g">
+        <reference id="9122903797312247166" name="style" index="1wgcnl" />
+      </concept>
+      <concept id="9122903797276194520" name="jetbrains.mps.lang.editor.structure.StyleClassReferenceList" flags="ng" index="1ybEpN">
+        <child id="9122903797276195161" name="element" index="1ybEBM" />
+      </concept>
+      <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
+        <child id="1219418656006" name="styleItem" index="3F10Kt" />
+      </concept>
+      <concept id="1950447826681509042" name="jetbrains.mps.lang.editor.structure.ApplyStyleClass" flags="lg" index="3Xmtl4">
+        <child id="1950447826683828796" name="target" index="3XvnJa" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="V5hpn" id="bcrrPfr0Cr">
+    <property role="TrG5h" value="ECMAScriptStyle" />
+    <node concept="14StLt" id="bcrrPfrAxm" role="V601i">
+      <property role="TrG5h" value="ECMAKeyWord" />
+      <node concept="3Xmtl4" id="bcrrPfuAxh" role="3F10Kt">
+        <node concept="1wgc9g" id="bcrrPfuAxr" role="3XvnJa">
+          <ref role="1wgcnl" to="tpen:hgVS8CF" resolve="KeyWord" />
+        </node>
+      </node>
+      <node concept="VechU" id="bcrrPfuADH" role="3F10Kt">
+        <node concept="1iSF2X" id="bcrrPfuADP" role="VblUZ">
+          <property role="1iTho6" value="8B0000" />
+        </node>
+      </node>
+      <node concept="Vb9p2" id="bcrrPfuAMH" role="3F10Kt">
+        <property role="Vbekb" value="g1_k_vY/BOLD" />
+      </node>
+    </node>
+    <node concept="14StLt" id="bcrrPfuAR7" role="V601i">
+      <property role="TrG5h" value="ECMAIdentifier" />
+      <node concept="3Xmtl4" id="bcrrPfuARO" role="3F10Kt">
+        <node concept="1wgc9g" id="bcrrPfuARW" role="3XvnJa">
+          <ref role="1wgcnl" to="tpen:hFD0yD_" resolve="VariableName" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="bcrrPfv7fC" role="V601i">
+      <property role="TrG5h" value="ECMASemicolon" />
+      <node concept="3Xmtl4" id="bcrrPfv7g1" role="3F10Kt">
+        <node concept="1wgc9g" id="bcrrPfv7g9" role="3XvnJa">
+          <ref role="1wgcnl" to="tpen:hFDgi_W" resolve="Semicolon" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="bcrrPfv9FX" role="V601i">
+      <property role="TrG5h" value="ECMALeftParen" />
+      <node concept="3Xmtl4" id="bcrrPfv9Gs" role="3F10Kt">
+        <node concept="1wgc9g" id="bcrrPfv9G$" role="3XvnJa">
+          <ref role="1wgcnl" to="tpen:hFCSAw$" resolve="LeftParen" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="bcrrPfv9Le" role="V601i">
+      <property role="TrG5h" value="ECMARightParen" />
+      <node concept="3Xmtl4" id="bcrrPfv9LN" role="3F10Kt">
+        <node concept="1wgc9g" id="bcrrPfv9LV" role="3XvnJa">
+          <ref role="1wgcnl" to="tpen:hFCSUmN" resolve="RightParen" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="hXb$RYA" role="V601i">
+      <property role="TrG5h" value="ECMALeftBracket" />
+      <node concept="3Xmtl4" id="3HPX3xRcONh" role="3F10Kt">
+        <node concept="1wgc9g" id="bcrrPfvcUd" role="3XvnJa">
+          <ref role="1wgcnl" to="tpen:hXb$RYA" resolve="LeftBracket" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="hXb$V4T" role="V601i">
+      <property role="TrG5h" value="ECMARightBracket" />
+      <node concept="3Xmtl4" id="3HPX3xRcPnt" role="3F10Kt">
+        <node concept="1wgc9g" id="bcrrPfvcUl" role="3XvnJa">
+          <ref role="1wgcnl" to="tpen:hXb$V4T" resolve="RightBracket" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="48UnsZirHnk" role="V601i">
+      <property role="TrG5h" value="ECMALeftBrace" />
+      <node concept="3Xmtl4" id="48UnsZirHof" role="3F10Kt">
+        <node concept="1wgc9g" id="48UnsZirHol" role="3XvnJa">
+          <ref role="1wgcnl" to="tpen:hFD5onb" resolve="LeftBrace" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="48UnsZirHpj" role="V601i">
+      <property role="TrG5h" value="ECMARightBrace" />
+      <node concept="3Xmtl4" id="48UnsZirHqh" role="3F10Kt">
+        <node concept="1wgc9g" id="48UnsZirHqn" role="3XvnJa">
+          <ref role="1wgcnl" to="tpen:hFD5_7H" resolve="RightBrace" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="bcrrPfvgyw" role="V601i">
+      <property role="TrG5h" value="ECMAOperator" />
+      <node concept="3Xmtl4" id="bcrrPfvgzn" role="3F10Kt">
+        <node concept="1wgc9g" id="bcrrPfvgzv" role="3XvnJa">
+          <ref role="1wgcnl" to="tpen:hF$iUjy" resolve="Operator" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="7rFtnRVds0d" role="V601i">
+      <property role="TrG5h" value="ECMAComment" />
+      <node concept="3Xmtl4" id="7rFtnRVduXo" role="3F10Kt">
+        <node concept="1wgc9g" id="7rFtnRVduXu" role="3XvnJa">
+          <ref role="1wgcnl" to="tpen:hshO_Yc" resolve="Comment" />
+        </node>
+      </node>
+      <node concept="VechU" id="7rFtnRVpS4o" role="3F10Kt">
+        <node concept="1iSF2X" id="7rFtnRVpS4p" role="VblUZ">
+          <property role="1iTho6" value="008000" />
+        </node>
+      </node>
+      <node concept="2lhJJ2" id="7rFtnRVqmi3" role="14Sbyx">
+        <node concept="1ybEpN" id="7rFtnRVqmi6" role="2lhEPC">
+          <node concept="14SbXO" id="7rFtnRVqmi5" role="1ybEBM">
+            <ref role="14SbXR" to="tpen:hshO_Yc" resolve="Comment" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="7rFtnRVpSaJ" role="V601i">
+      <property role="TrG5h" value="ECMADocComment" />
+      <node concept="3Xmtl4" id="7rFtnRVpSaK" role="3F10Kt">
+        <node concept="1wgc9g" id="7rFtnRVpSaL" role="3XvnJa">
+          <ref role="1wgcnl" to="tpen:hshO_Yc" resolve="Comment" />
+        </node>
+      </node>
+      <node concept="VechU" id="7rFtnRVpqn3" role="3F10Kt">
+        <node concept="1iSF2X" id="7rFtnRVpqn4" role="VblUZ">
+          <property role="1iTho6" value="00008F" />
+        </node>
+      </node>
+      <node concept="2lhJJ2" id="7rFtnRVqmi9" role="14Sbyx">
+        <node concept="1ybEpN" id="7rFtnRVqmic" role="2lhEPC">
+          <node concept="14SbXO" id="7rFtnRVqmib" role="1ybEBM">
+            <ref role="14SbXR" to="tpen:hshO_Yc" resolve="Comment" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="7rFtnRVFu_Y" role="V601i">
+      <property role="TrG5h" value="ECMANumericLiteral" />
+      <node concept="3Xmtl4" id="7rFtnRVFH1y" role="3F10Kt">
+        <node concept="1wgc9g" id="7rFtnRVFH1E" role="3XvnJa">
+          <ref role="1wgcnl" to="tpen:hshT4rC" resolve="NumericLiteral" />
+        </node>
+      </node>
+      <node concept="VechU" id="7rFtnRVFuAL" role="3F10Kt">
+        <property role="Vb096" value="fLwANPu/blue" />
+        <node concept="1iSF2X" id="7rFtnRVFuLF" role="VblUZ">
+          <property role="1iTho6" value="0000FF" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="7rFtnRVFHVG" role="V601i">
+      <property role="TrG5h" value="ECMAStringLiteral" />
+      <node concept="3Xmtl4" id="7rFtnRVFHWx" role="3F10Kt">
+        <node concept="1wgc9g" id="7rFtnRVFHWB" role="3XvnJa">
+          <ref role="1wgcnl" to="tpen:hgVSdfU" resolve="StringLiteral" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="48UnsZirglp" role="V601i">
+      <property role="TrG5h" value="ECMADot" />
+      <node concept="3Xmtl4" id="48UnsZirgmN" role="3F10Kt">
+        <node concept="1wgc9g" id="48UnsZirgmR" role="3XvnJa">
+          <ref role="1wgcnl" to="tpen:hFDnyG9" resolve="Dot" />
+        </node>
+      </node>
+    </node>
+  </node>
+</model>
+
