@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:5956af82-53d4-4b0b-aada-46792869763b(org.mar9000.mps.ecmascript.runtime.global)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="a4829704-6b1b-4b3f-8122-a4a2e6ac90ff" name="org.mar9000.mps.ecmascript">
+      <concept id="8569071899956270924" name="org.mar9000.mps.ecmascript.structure.JSFunctionExpression" flags="ng" index="2dhU8L">
+        <child id="8569071899956271164" name="body" index="2dhUP1" />
+      </concept>
+      <concept id="8569071899956270700" name="org.mar9000.mps.ecmascript.structure.JSObjectExpression" flags="ng" index="2dhUch">
+        <child id="8569071899956270809" name="properties" index="2dhUe$" />
+      </concept>
+      <concept id="8569071899956268701" name="org.mar9000.mps.ecmascript.structure.JSProperty" flags="ng" index="2dhVJw">
+        <child id="8569071899956270432" name="key" index="2dhU0t" />
+        <child id="8569071899956270586" name="value" index="2dhU27" />
+      </concept>
+      <concept id="8569071899956248883" name="org.mar9000.mps.ecmascript.structure.JSVariableDeclarator" flags="ng" index="2dhZhe">
+        <child id="8569071899956249032" name="id" index="2dhZiP" />
+        <child id="8569071899956249109" name="init" index="2dhZtC" />
+      </concept>
+      <concept id="8466695158119822344" name="org.mar9000.mps.ecmascript.structure.JSNativeDeclaration" flags="ng" index="WfWDF" />
+      <concept id="201656743169483888" name="org.mar9000.mps.ecmascript.structure.JSBlockStatement" flags="ng" index="1dSoBd" />
+      <concept id="201656743169479441" name="org.mar9000.mps.ecmascript.structure.JSIdentifier" flags="ng" index="1dSrUG">
+        <property id="201656743169479442" name="idName" index="1dSrUJ" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="WfWDF" id="7lZJAd9guaU">
+    <node concept="1dSrUG" id="7lZJAd9guaW" role="2dhZiP">
+      <property role="1dSrUJ" value="console" />
+    </node>
+    <node concept="2dhUch" id="7lZJAd9gub2" role="2dhZtC">
+      <node concept="2dhVJw" id="7lZJAd9gJBu" role="2dhUe$">
+        <node concept="1dSrUG" id="7lZJAd9gJB$" role="2dhU0t">
+          <property role="1dSrUJ" value="log" />
+        </node>
+        <node concept="2dhU8L" id="7lZJAd9gJBB" role="2dhU27">
+          <node concept="1dSoBd" id="7lZJAd9gJBD" role="2dhUP1" />
+        </node>
+      </node>
+    </node>
+  </node>
+</model>
+
